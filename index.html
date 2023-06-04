@@ -10,37 +10,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe9a8c6986.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main>
         <div class="calculator">
             <div class="screen">
-                <div class="last-input">0</div>
-                <div class="current-input">0</div>
+                <div class="last-input" id="lastInput"></div>
+                <div class="current-input" id="currentInput">0</div>
             </div>
             <div class="buttons-grid">
-                <button class="btn btn-clear grid-2">CLEAR</button>
-                <button class="btn btn-delete grid-2">DELETE</button>
-                <button class="btn">7</button>
-                <button class="btn">8</button>
-                <button class="btn">9</button>
-                <button class="btn">÷</button>
-                <button class="btn">4</button>
-                <button class="btn">5</button>
-                <button class="btn">6</button>
-                <button class="btn">×</button>
-                <button class="btn">1</button>
-                <button class="btn">2</button>
-                <button class="btn">3</button>
-                <button class="btn">-</button>
-                <button class="btn">.</button>
-                <button class="btn">0</button>
-                <button class="btn">=</button>
-                <button class="btn">+</button>
+                <button class="btn btn-clear grid-2" id="clear">CLEAR</button>
+                <button class="btn btn-delete grid-2" id="delete">DELETE</button>
+                <button class="btn" data-number>7</button>
+                <button class="btn" data-number>8</button>
+                <button class="btn" data-number>9</button>
+                <button class="btn" data-operator>÷</button>
+                <button class="btn" data-number>4</button>
+                <button class="btn" data-number>5</button>
+                <button class="btn" data-number>6</button>
+                <button class="btn" data-operator>×</button>
+                <button class="btn" data-number>1</button>
+                <button class="btn" data-number>2</button>
+                <button class="btn" data-number>3</button>
+                <button class="btn" data-operator>-</button>
+                <button class="btn" id="decimal">.</button>
+                <button class="btn" data-number>0</button>
+                <button class="btn" id="equal">=</button>
+                <button class="btn" data-operator>+</button>
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <p>
+            Developed by Alen Gracanin
+        </p>
+        <a href="https://github.com/agracanin" target="_blank">
+            <i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></a>
+    </footer>
     <script src="app.js"></script>
 </body>
 
